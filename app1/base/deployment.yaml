@@ -20,8 +20,8 @@ spec:
           volumeMounts:
             - mountPath: /test
               name: test-volume
-  volumes:
-    - name: test-volume
-      secret:
-        secretName: mysecret
-        optional: false
+      volumes:
+        - name: test-volume
+          secret:
+            secretName: mysecret
+            optional: false
