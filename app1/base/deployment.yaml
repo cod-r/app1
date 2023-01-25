@@ -16,4 +16,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: nginz:latest
+          image: nginx:latest
+          volumeMounts:
+            - mountPath: /test
+              name: test-volume
